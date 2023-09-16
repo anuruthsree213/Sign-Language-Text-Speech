@@ -1,0 +1,13 @@
+<div class="outer-container">
+    <div class="btn-action-container">
+        <button type="button" mat-raised-button class="btn-cls" (click)="startVideo(selfie.id)">Video On</button>
+        <button type="button" mat-raised-button class="btn-cls" (click)="stopVideo(selfie.id)">Video Off</button>
+    </div>
+
+    <div class="video-container">
+        <div class="video-display-container">
+            <video #selfie id="user-video" autoplay></video>
+        </div>
+        <div class="user-action-container"></div>
+    </div>
+</div>
